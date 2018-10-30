@@ -1,0 +1,1779 @@
+id,step_number,sort_order,question,label_name,name,field_type,field_choices,hold_status,hold_condition,is_chaining,chaining_condition,chain_question_id,created_at,created_by,updated_at,updated_by,is_verified,states_list,Comment,is_deleted_b,row
+1,1,100,Do you currently have an insurance policy in effect for the coverage requested?,Insurance Policy Coverage,insurancePolicyCoverage,radio-question,"Yes
+No
+Prefer not to answer",None,,TRUE,Yes,4,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,1
+4,2,200,Please provide the name of your insurance carrier:,Insurance Carrier,insuranceCarrier,Text,,None,,TRUE,,5,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,related to question 1 if yes.,FALSE,2
+5,3,300,Do you have the retroactive date of your current Professional Liability policy?,Retroactive Date,retroactiveDate,radio-question,"Yes, I have a retroactive date
+I don’t know what that is or I can’t find it.
+I don’t have Professional Liability and currently carry General Liability only.",None,,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,If yes they need to upload dec page.  We need upload file chaining,FALSE,3
+6,4,400,Do you currently have an insurance policy in effect for the coverage requested?,Insurance Policy Coverage,insurancePolicyCoverage,radio-question,"Yes
+No
+Prefer not to answer",None,,TRUE,Yes,7,6/11/2018,V9.0.91,9/18/2018,V9.0.91,FALSE,,,TRUE,4
+7,5,500,Please provide the name of your insurance carrier:,Insurance Carrier,insuranceCarrier,Text,,,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,chained from Q id 6.,FALSE,5
+9,6,600,What are your business’s estimated gross sales during the next 12 months?,Estimated Sales,esitimatedSales,input-question,,,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,6
+10,7,700,"During the next 12 months, what are the estimated gross sales you will earn from your largest
+customer?",Largest Customer Estimated Sales,largestCustomerEstimatedSales,input-question,,,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,7
+13,8,800,"For the next 12 months, what is your business’s estimated total annual revenue?",Total Annual Revenue Businesss,totalAnnualRevenueBusinesss,input-question,,,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,8
+14,9,900,"For the next 12 months, what is your business’s estimated total annual revenue (from commissions and other sources of revenue)?",Total Annual Revenue,totalAnnualRevenue,input-question,,,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,9
+15,10,1000,What are your business’s estimated gross sales during the next 12 months (include any government subsidies and charitable donations or contributions)?,Estimated Gross Sales,estimatedGrossSales,input-question,,,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,10
+16,11,1100,What are your business’s estimated commissions during the next 12 months?,Estimated Commisions,estimatedCommissions,input-question,,,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,11
+17,12,1105,"During the next 12 months, what are the estimated commissions you will earn from your largest customer?",Largest Customer Estimated Commissions,largestCustomerEstimatedCommissions,input-question,,,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,12
+18,14,1300,"During the next 12 months, what is the estimated gross revenue you will earn from you largest project?",Largest Project Estimated Revenue,largestProjectEstimatedRevenue,input-question,,,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,13
+19,,1400,Does your business use a written contract or statement of work?,Work,work,radio-question,"Always
+Sometimes
+Never",None,,FALSE,,,6/11/2018,V9.0.91,6/17/2018,V9.0.91,TRUE,,,FALSE,14
+20,,1500,Does your business use a written consent form?,Written Consent Form,writtenConsentForm,radio-question,"Always
+Most of the time
+Sometimes
+Never",None,,FALSE,,,6/11/2018,V9.0.91,6/14/2018,V9.0.91,TRUE,,,FALSE,15
+21,,1600,"Do you ever work in a hospital, long term care facility or physician’s office?",Hospital/Medical Facility,hospitalMedicalFacility,radio-question,"Yes
+No",None,,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,16
+22,,1700,"Are you an active or retired Medical Doctor, Registered Nurse, Nurse Practitioner,
+Licensed Practical Nurse, Physician’s Assistant or Naturopathic Doctor?",Retired Medical Professional,retiredMedicalProfessional,radio-question,"Yes
+No",,,FALSE,,,6/11/2018,V9.0.91,9/13/2018,V9.0.91,TRUE,,,FALSE,17
+23,,1800,Does your business use a written consent form?,Written Consent Form,writtenConsentForm,radio-question,"Always
+Most of the time
+Sometimes
+Never",,,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,18
+24,,1900,"Are you or any of your employees an active Medical Doctor, Midwife, Nurse Practitioner, Physician’s Assistant, Register Nurse, Licensed Practical Nurse, or
+Naturopathic doctor?",Active Medical Professional,activeMedicalProfessional,radio-question,"Yes
+No",None,,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,19
+25,,2000,"If required by state law, do you or the principal of your firm maintain current and valid professional training, certifications, licenses or designations for all services you provide?",Valid Professional Training,validProfessionalTraining,radio-question,"Yes
+No
+Not Required",KO,NO,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,20
+26,,2100,Approximately when did your business begin?,Business Begin,businessBegin,input-question,,None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,21
+27,,2200,Which of the following services does your business provide (check all that apply)?,Business Services,businessServices,checkbox-question,"Bookkeeping/Payroll services
+Personal Tax & Business Tax Returns
+Enrolled Agents
+Business Consulting
+Certified Public Accounting
+Estate Tax Returns
+Forensic Accounting
+Litigation Support
+Business Valuations/Forecasts
+Auditing/Attestation Services",,,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,22
+28,,2300,"Does your business manage or participate in any of the following services?
+* Auditing for financial institutions or pensions
+* Financial planning as a registered financial advisor
+* Tax shelters
+* Investment advice
+* Mergers & acquisitions
+* Public audits, SEC audits, high net worth auditing ($10M+ clients)
+* Trustee services",Services Participated In,servicesParticipatedIn,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,23
+29,,2400,What is your business’s primary type of client?,Primary Client Type,primaryClientType,radio-question,"Businesses
+Non-publicly known individuals/families
+Publicly known individuals/families
+Government – Federal
+Government
+Non-Profit or Charities
+Other; please explain",None,,TRUE,Other; please explain,1243,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,remove softhold for other.,FALSE,24
+30,,2500,Does your business provide any acupuncture services?,Acupuncture Services Provided,acupunctureServicesProvided,radio-question,"Yes
+No",None,,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,Endorsement,FALSE,25
+31,,2600,"Do you perform any of the following?
+• Homeopathy
+• Cupping
+• Direct moxibustion
+• Injections
+• Perform acupuncture for purposes of anesthesia
+• Prescribe or dispense herbs or herbal drugs other than mugwort
+• Prescribe or dispense over the counter or prescription drugs
+• Use of non-disposable needles",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,TRUE,26
+33,,2800,What is the most common reason for patients to seek treatment from you?,Common Treatment Reason,commonTreatmentReason,radio-question,"Addiction
+General body aches, pains and discomfort
+Immune boosting
+Insomnia
+Relieving Stress
+Sexual disorders
+Other, please explain",None,,TRUE,"Other, please explain",34,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,TRUE,27
+34,,2900,Other,FIX-ME,fIX-ME,input-question,,,,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,28
+35,,3000,What is the most common age group that you treat?,Common Age Group,commonAgeGroup,radio-question,"Children up to 12 years old
+Teenagers 13 - 17 years old
+Adults 18 - 64 years old
+Seniors 65+ years old",None,,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,29
+36,,3100,Does your business provide any acupressure services?,Acupressure Services Provided,acupressureServicesProvided,radio-question,"Yes
+No",None,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,30
+37,,3200,"Do you perform any of the following?
+• Homeopathy
+• Cupping
+• Direct moxibustion
+• Injections
+• Perform acupuncture for purposes of anesthesia
+• Prescribe or dispense over the counter or
+    prescription drugs
+•Use of non-disposable needles",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,31
+39,,3300,What is the most common reason for patients to seek treatment from you?,Common Treatment Reason,commonTreatmentReason,radio-question,"Addiction
+General body aches, pains and discomfort
+Immune boosting
+Insomnia
+Relieving Stress
+Sexual disorders
+Other, please explain",None,,TRUE,"Other, please explain",1237,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,32
+40,,3400,Does your business provide any acupressure services?,Acupressure Services Provided,acupressureServicesProvided,radio-question,"Yes
+No",None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,Duplicate question #036,TRUE,33
+42,,3500,"Do you perform any of the following?
+• Homeopathy
+• Cupping
+• Direct moxibustion
+• Injection
+• Perform acupuncture for purposes of anesthesia
+• Prescribe or dispense herbs or herbal drugs other than mugwort
+• Prescribe or dispense over the counter or prescription drugs
+• Use of non-disposable needles
+o Yes
+o No",Services Provided,servicesProvided,YesNo,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,FALSE,,Duplicate #037,TRUE,34
+43,,3600,"What is the most common reason for patients to seek treatment from you?
+• Addiction
+• General body aches, pains and discomfort
+• Immune boosting
+• Insomnia
+• Relieving Stress
+• Sexual disorders
+• Other, please explain",Common Treatment Reason,commonTreatmentReason,radio-question,"Addiction
+General body aches, pains and discomfort
+Immune boosting
+Insomnia
+Relieving Stress
+Sexual disorders
+Other, please explain",,,FALSE,"==""other, please explain""",,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,Duplicate #039,TRUE,35
+45,,3700,What is the most common age group that you treat?,Common Age Group,commonAgeGroup,radio-question,"Children up to 12 years old
+Teenagers 13 - 17 years old
+Adults 18 - 64 years old
+Seniors 65+ years old",None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,Missing after #039,TRUE,36
+46,,3800,"Does your business comply with applicable federal, state, and local laws and regulations relating to telemarketing and telesales including “Do Not Call” laws and regulations?",Comply With Do Not Call,complyWithDoNotCall,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,Part of question #047,FALSE,37
+48,,3900,"Does your business comply with applicable federal, state, and local laws and regulations relating to telemarketing and telesales including “Do Not Call” laws and regulations?",Comply With Do Not Call,complyWithDoNotCall,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,38
+49,,4000,Does your business maintain logs of calls made and logs of received and delivered messages?,Maintain Logs of Messages,maintainLogsOfMessages,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,39
+50,,4100,Do you subcontract any professional services?,Professional Services Subcontracted,professionalServicesSubcontracted,radio-question,"Yes
+No",KO,Yes,TRUE,Yes,1232,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,If we add Design Professional need to add endorsement,FALSE,40
+51,,4200,"Do you or any of your subcontractors provide any of the following services or work on any projects involving the
+following materials or infrastructure?
+• Aerospace engineering
+• Amusement rides, pools or playgrounds
+• Asbestos, lead, or mold evaluation or abatement
+• Bridges, dams, harbors, mines, piers or tunnels
+• Condominiums
+• Design/build firms
+• Emergency response or clean-up of any hazardous waste
+• Foundation, sheeting or retaining wall design
+• Geotechnical / soils engineering
+• Home inspections for prospective buyers or lenders
+• Hydraulic fracturing, hydrofracturing, or fracking
+• Laboratory testing
+• Land acquisition
+• Land surveying, boundary surveying or construction staking
+• Marine engineering
+• Mechanical engineering
+• Mining engineering
+• Nuclear engineering
+• Oil, gas or well engineering
+• Petro / chemical engineering
+• Structural engineering
+• Underground storage tanks or utilities",Materials or Infrastructure Services,materialsOrInfrastructureServices,radio-question,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,41
+52,,4300,"Other than any design or project management, do you or any of your subcontractors directly perform any of the following physical services?
+• Carpentry
+• Construction or demolition
+• Electrical
+• Equipment installation or repair
+• Flooring
+• Lawn or garden maintenance
+• Painting
+• Plumbing
+• Roofing
+• Tiling",Physical Services Performed,physicalServicesPerformed,radio-question,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,42
+55,,4500,In what category do the majority of your projects fall into?,Project Category,projectCategory,radio-question,"• Agricultural / farming
+• Entertainment / gaming / theaters
+• Government / education
+• Healthcare / religious institutions
+• Manufacturing / warehouses / industrial / energy / utilities
+• Office buildings / parking structures / apartments / shopping centers
+• Residential Homes
+• Transportation / roads / rails / airports
+• Other, Please explain",None,,TRUE,"Other, Please explain",1234,6/11/2018,V9.0.91,6/14/2018,V9.0.91,FALSE,,,FALSE,43
+56,,4600,Which of the following does  does your business implement?,Business Implements,businessImplements,checkbox-question,"Customer Sign-Off Deliverables
+Contracts with Indemnification clauses in your favor",KO,"Customer Sign-Off Deliverables ||
+Contracts with Indemnification clauses in your favor",FALSE,,,6/11/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,44
+58,,4700,What is the most common reason for patients to seek treatment from you?,Common Treatment Reason,commonTreatmentReason,radio-question,"Emotional disorders
+Behavior disorders
+Mental health
+Learning disabilities
+Physical disabilities
+Other, please explain",None,,TRUE,"Other, please explain",,6/11/2018,V9.0.91,6/14/2018,V9.0.91,TRUE,,,FALSE,45
+59,,4800,What is the most common age group that you treat?,Common Age Group,commonAgeGroup,radio-question,"Children up to 12 years old
+Teenagers 13 - 17 years old
+Adults 18 - 64 years old
+Seniors 65+ years old",None,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,TRUE,46
+60,,4900,"Do you do any of the following?
+• Auction properties or other items that your business owns or in which it has a controlling interest
+• Conduct private or other auctions other than public auctions
+• Authenticate the ownership of property(ies) or items auctioned
+• Conduct auctions on-line or over the Internet",Auction Activities,auctionActivities,radio-question,"Yes
+No",KO,Yes       ,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,,FALSE,47
+61,,5000,"Does your business auction:
+• Antiques
+• Automobiles/boats and other vehicles
+• Fine art, coins, other precious metals and gems
+• Personal property
+• Real estate
+• Valuable papers/documents
+• Other; please explain",Item Types Auctioned,itemTypesAuctioned,checkbox-question,,,,FALSE,,,6/11/2018,V9.0.91,6/24/2018,V9.0.91,FALSE,,"Need to add ""other"" as chaining",FALSE,48
+62,,5100,Do you maintain current and valid professional certifications or designations as required or recognized by industry standards?,Professional Certifications Maintained,professionalCertificationsMaintained,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,49
+63,,5200,What is the most common age group that you treat?,Common Age Group,commonAgeGroup,radio-question,"Children 1 year old or younger
+Children 2 - 12 years old
+Teenagers 13 - 17 years old
+Adults 18 - 64 years old
+Seniors 65+ years old",None,,FALSE,,,6/11/2018,V9.0.91,6/19/2018,V9.0.91,FALSE,,,FALSE,50
+64,,5300,Do you provide any of the following services?,Services Provided,servicesProvided,checkbox-question,"Design personal and industrial hearing safety programs
+Design newborn hearing screening programs
+Design school hearing screening programs
+Fit and dispense hearing aids to your patients
+Map cochlear implants for your patients",None,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,Need to check endorsement info or KO,FALSE,51
+66,,5400,Does your business provide any of these additional services?,Additional Services Provided,additionalServicesProvided,checkbox-question,"Beautician/cosmetologist
+Esthetician
+Nail Technician",None,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,"If yes, for additional services add endorsments for each selection",FALSE,52
+67,,5500,"Does your business provide any of the following services or use any of this equipment?
+• Administer Injections
+• Chemical peels with solutions 31% or greater?
+• Colon hydrotherapy services
+• Electrolysis services
+• Laser treatment services
+• Operate saunas or stream rooms
+• Operate tanning beds or booths
+• Permanent make up services
+• Skin tag removal services
+• Tattoos services",Services or Equipment,servicesOrEquipment,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,,FALSE,53
+68,,5600,"Does your business provide any of the following activities?
+• Body polishing
+• Body wraps
+• Chemical peels with solutions up to 30%
+• Microdermabrasion",Business Activities,businessActivities,radio-question,"Yes
+No",None,,TRUE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,54
+69,,5700,Approximately what percentage of your annual revenue comes from providing educational instruction to students seeking a license in your profession?,Educational Instruction Revenue,educationalInstructionRevenue,radio-question,"None
+1%-25%
+26%-50%
+51% - 75%
+76% - 100%",None,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,This is info only question,FALSE,55
+70,,5800,Does your business provide any of these additional services?,Additional Services Provided,additionalServiceProvided,checkbox-question,"Barber/hair stylist
+Esthetician
+Nail Technician",None,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,"If yes, for additional services add endorsements for each",FALSE,56
+71,99,5900,"Does your business provide any of the following services or use any of this equipment?
+• Administer Injections
+• Chemical peels with solutions 31% or greater?
+• Colon hydrotherapy services
+• Electrolysis services
+• Laser treatment services
+• Operate saunas or stream rooms
+• Operate tanning beds or booths
+• Permanent make up services
+• Skin tag removal services
+• Tattoos services",Services or Equipment,servicesOrEquipment,YesNo,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,Duplicate see #67,TRUE,57
+72,,6000,"Does your business provide any of the following activities?
+• Body polishing
+• Body wraps
+• Chemical peels with solutions up to 30%
+• Microdermabrasion",Business Activities,businessActivities,YesNo,,None,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,"Check endorsement if Info or KO
+dupe see 68",TRUE,58
+73,,6100,Does your business provide any full body massage therapy sessions?,Full Body Massage Therapy,fullBodyMassageTherapy,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,,FALSE,59
+74,,6200,"Approximately what percentage of your annual revenue comes from providing educational instruction to students
+seeking a license in your profession?",Educational Instruction Revenue,educationalInstructionRevenue,radio-question,"None
+1%-25%
+26%-50%
+51% - 75%
+76% - 100%",None,,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,60
+75,,6300,Does your business conduct financial audits or provide attestation services?,Financial Audit or Attestation Services,financialAuditOrAttestationServices,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,61
+76,,6400,What is your business’s primary type of client?,Primary Type of Client,primaryTypeOfClient,radio-question,"Businesses
+Non-publicly known individuals/families
+Publicly known individuals/families
+Government – Federal
+Government – state, local, or foreign
+Other; please explain",None,,TRUE,Other; please explain,,6/11/2018,V9.0.91,6/24/2018,V9.0.91,FALSE,,"Did not add chaining question ""Other""",FALSE,62
+77,,6500,Do you maintain current and valid professional certifications or designations as required or recognized by industry standards?,Professional Certifications Maintained,professionalCertificationsMaintained,radio-question,"Yes
+No",KO,No        ,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,TRUE,63
+78,,6600,What type of consulting services does your business primarily provide?,Primariy Consulting Type,primaryConsultingType,radio-question,"Business continuity planning/disaster recovery
+Ecological/”green” consulting
+Employee compensation programs/payroll Consulting
+General business operations and strategy
+Human Resources (including employment practices)
+Intellectual property
+Logistics management
+Organizational structure
+Project management
+Sarbanes-Oxley compliance
+Other; Please explain the type of consulting services you provide and provide your business’s website address
+(if you have one)",None,,TRUE,"Other; Please explain the type of consulting services you provide and provide your business’s website address
+(if you have one)",1251,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,64
+79,,6700,"Does your business provide any of the following services?
+• Aerospace consulting or advice
+• Actuarial advice
+• Architecture or engineering advice
+• Construction management or advice
+• Credit counseling
+• Environmental consulting or advice
+• Financing or financial auditing
+• General contracting
+• Investment or tax advice
+• Insurance placement or advice
+• Land acquisition
+• Law enforcement training
+• Legal advice
+• Lobbying and/or political advice
+• Medical advice
+• Mergers and acquisitions or business valuations
+• Mining consulting or advice
+• Oil, gas, or petroleum consulting or advice
+• Safety consulting or advice
+• Sales representative",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,65
+80,,6800,In what industry do the majority of your clients work?,Client Industry,clientIndustry,radio-question,"Agricultural/mining
+Aerospace
+Construction
+Education
+Government – Federal
+Government – state, local, or foreign
+Energy/utilities
+Financial institutions
+Individual consumers
+Medical/healthcare-related
+Media/entertainment
+Payment processors
+Professional service providers (not otherwise listed)
+Retail/wholesale trade/consumer products
+Technology
+Transportation (not including aerospace)
+Other/multiple industries; please explain",None,,TRUE,Other/multiple industries; please explain,1252,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,Do we need to add the chaining question,FALSE,66
+81,,6900,Which of the following does your business implement?,Business Implements,businessImplements,checkbox-question,"Customer sign-off on deliverables
+Formal change management procedures
+Legal review of contracts
+Contracts with indemnification clauses in your favor",KO,"Customer sign-off on deliverables!!
+Formal change management procedures!!
+Legal review of contracts!!
+Contracts with indemnification clauses in your favor",FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,Need to add Research consulting not on list at this time.,TRUE,67
+82,,7000,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,68
+83,,7100,Do your contracts state that to the best of your knowledge any materials or intellectual property created are original and do not infringe upon the intellectual property rights of others?,Intellectual Property Original,intellectualPropertyOriginal,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,69
+85,,7200,Does your business function as a public adjuster?,Public Adjuster,publicAdjuster,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,70
+86,,7300,What type of claims does your business primarily adjust?,Claims Primarily Adjusted,claimsPrimarilyAdjusted,radio-question,"Aviation
+Casualty and liability (non medical)
+Environmental
+Life insurance
+Marine
+Medical
+Personal lines (other than life insurance)
+Property
+Other; please explain",SoftHold,Other; please explain,TRUE,Other; please explain,1253,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,"Need to Chaining separate soft hold to be reviewed, still don't know how to underwrite",FALSE,71
+87,,7400,What is the estimated number of claims your business will handle during the next 12 months?,Estimated Number Of Claims,estimatedNumberOfClaims,input-question,,None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,72
+88,,7500,What is the estimated average value of each claim your business will handle during the next 12 months?,Estimated Average Claim Value,estimatedAverageClaimValue,input-question,,None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,73
+89,,7600,Do you maintain current and valid professional licenses as required?,Professional Licenses Maintained,professionalLicensesMaintained,radio-question,"Yes
+N/A – licenses are not required
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,74
+90,,7700,What type of work primarily is handled by your business?,Primary Work Type,primaryWorkType,radio-question,"Civil proceedings (including pre-trial depositions)
+Closed captioning
+Criminal proceedings (including pre-trial depositions)
+Other judicial proceedings (not otherwise listed, e.g., arbitrations, mediations)
+Other; please explain",SoftHold,Other; please explain,TRUE,Other; please explain,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,086 should be done the same for other explaintion how to review for underwriting,FALSE,75
+91,,7800,Does your business have a process to maintain backup copies of recorded information?,Maintain Backups,maintainBackups,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,76
+92,,7900,Do you maintain current and valid professional certifications or designations as required or recognized by industry standards?,Professional Certifications Maintained,professionalCertificationsMaintained,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,TRUE,77
+93,,8000,What type of direct marketing services does your business primarily provide?,Primary Direct Marketing Services Type,primaryDirectMarketingServicesType,radio-question,"Marketing campaigns (servicing, and support)
+Marketing plan development/design, research and advice
+Market research
+Product development and testing
+Project management
+Public relations
+Other; Please explain the type of direct marketing services you provide and provide your business’s website
+address (if you have one).",SoftHold,"Other; Please explain the type of direct marketing services you provide and provide your business’s website
+address (if you have one).",TRUE,"Other; Please explain the type of direct marketing services you provide and provide your business’s website
+address (if you have one).",1255,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,78
+94,,8100,"Does your business promote media, artists or entertainers on behalf of or for any entertainment, publishing, music, internet or media company?",Promote Media or Artists,promoteMediaOrArtists,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,79
+95,,8200,In what industry do the majority of your clients work?,Client Industry,clientIndustry,radio-question,"Agricultural/mining
+Aerospace
+Construction
+Education
+Government – Federal
+Government – state, local, or foreign
+Energy/utilities
+Financial institutions
+Individual consumers
+Medical/healthcare-related
+Media/entertainment
+Payment processors
+Professional service providers (not otherwise listed
+Retail/wholesale trade/consumer products
+Technology
+Transportation (not including aerospace)
+Other/multiple industries; please explain",None,,TRUE,Other/multiple industries; please explain,1256,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,TRUE,80
+96,,8300,"Does your business comply with applicable federal, state, and local laws and regulations relating to telemarketing and telesales including “Do Not Call” laws and regulations?",Comply With Do Not Call,complyWithDoNotCall,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,81
+103,,8800,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,TRUE,82
+104,,8900,"Do your contracts state that to the best of your knowledge any materials or intellectual property created are original
+and do not infringe upon the intellectual property rights of others?",Intellectual Property Original,intellectualPropertyOriginal,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,83
+106,,9000,"Do you have a process in place to screen materials for any potential violations of another party’s copyrights,
+trademarks or other intellectual property rights?",Intellectual Property Violation Screening,intellectualPropertyViolationScreening,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,84
+107,,9100,"Do you have a process in place to screen materials for potential libel, slander or advertising injury?",Screen for Libel or Slander,screenForLibelOrSlander,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,85
+108,,9200,"Are you the nutritional director at any of the following:
+• Correctional facility
+• Health department
+• Healthcare facility
+• Hospital
+• Physician’s office
+• School or University
+• State or local government agency",Nutritional Director,nutritionalDirector,radio-question,,KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,86
+109,,9300,"Do you perform any of these services?
+• Prescribe or dispense herbs or herbal drugs
+• Prescribe or dispense over the counter or prescription drugs
+• Prescribe Hormone Therapy",Services Provided,servicesProvided,radio-question,,KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,87
+111,,9400,Do you provide any services to professional athletes?,Professional Athletes Services,professionalAthletesServices,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,88
+112,,9500,Approximately what percentage of your estimated annual revenue comes from selling dietary supplements?,Dietary Supplements Revenue Percentage,dietarySupplementsRevenuePercentage,radio-question,"None
+1%-25%
+26%-50%
+51% - 75%
+76% - 100%",None,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,No KO for Diet/Nutr.,FALSE,89
+113,,9600,What is the most common age group that you treat?,Common Age Group,commonAgeGroup,radio-question,"Children 1 year old or younger
+Children 2 - 12 years old
+Teenagers 13 - 17 years old
+Adults 18 - 64 years old
+Seniors 65+ years old",None,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,90
+114,,9700,"Does your business provide documents that support or provide any of the following services?
+• Appraisals
+• Background checks
+• Investment or tax advice
+• Legal advice
+• Medical advice
+• Mergers and acquisitions or business valuations
+• Private investigations
+• Title abstracting",Provides Documents Supporting Services,providesDocumentsSupportingServices,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,91
+115,,9800,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,TRUE,92
+116,,9900,What type of consulting services does your business primarily provide?,Primary Consulting Service Type,primaryConsultingServiceType,radio-question,"Business continuity planning/disaster recovery
+Curriculum design, development and implementation
+Employee/teacher compensation programs/payroll consulting
+General business operations and strategy
+Human Resources (including employment practices)
+Individual Educational Plans (IEP)
+Intellectual property
+IT/systems/software consulting
+Organizational structure
+Project management
+Public relations
+Union issues (including contract negotiation)
+Other; Please explain the type consulting services you provide and provide your business’s website address (if
+you have one).",None,,TRUE,"Other; Please explain the type consulting services you provide and provide your business’s website address (if
+you have one).",,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,"see 061 for chaining ""other""",FALSE,93
+117,,10000,"Does your business provide any of the following services?
+• Aerospace consulting or advice
+• Actuarial advice
+• Architecture or engineering advice
+• Construction management or advice
+• Credit counseling
+• Environmental consulting or advice
+• Financing or financial auditing
+• General contracting
+• Investment or tax advice
+• Insurance placement or advice
+• Land acquisition
+• Law enforcement training
+• Legal advice
+• Lobbying and/or political advice
+• Medical advice
+• Mergers and acquisitions or business valuations
+• Mining consulting or advice
+• Oil, gas, or petroleum consulting or advice
+• Safety consulting or advice
+• Sales representative",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,94
+118,,10100,"Is your business any of the following?
+• Public/private/charter school
+• College or university
+• Day care or eldercare facility
+• Technical or vocational school",Business Type,businessType,radio-question,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,95
+120,1,10200,In what industry do the majority of your clients work?,Client Industry,clientIndustry,radio-question,"Public/private K-12 schools
+Institutions of higher education (e.g., Universities, colleges)
+Charter schools
+Professional schools (medical, law, etc.)
+Technical/vocational schools
+Other; please explain",None,,TRUE,Other; please explain,1257,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,"see 061 ""other""",FALSE,96
+125,,10700,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,TRUE,97
+126,,10800,"Do your contracts state that to the best of your knowledge any materials or intellectual property created are original
+and do not infringe upon the intellectual property rights of others?",Intellectual Property Original,intellectualPropertyOriginal,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,98
+129,,10900,Does your business provide any of these additional services?,Additional Business Services,additionalBusinessServices,checkbox-question,"Barber/hair stylist
+Beautician/cosmetologist
+Nail Technician",None,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,If yes to any additional services at endorsements,FALSE,99
+132,99,11200,"Does your business provide any of the following services or use any of this equipment?
+• Administer Injections
+• Chemical peels with solutions 31% or greater?
+• Colon hydrotherapy services
+• Electrolysis services
+• Laser treatment services
+• Operate saunas or stream rooms
+• Operate tanning beds or booths
+• Permanent make up services
+• Skin tag removal services
+• Tattoos services
+",Services or Equipment,servicesOrEquipment,YesNo,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,Duplicate see #67,TRUE,100
+133,,11300,"Does your business provide any of the following activities?
+• Body polishing
+• Body wraps
+• Chemical peels with solutions up to 30%
+• Microdermabrasion",Business Activities,businessActivities,radio-question,"Yes
+No",None,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,dupe see 68,TRUE,101
+1260,,13650,Other; Please explain the type of consulting services you provide and provide your business’s website address (if you have one).,Consulting Services Provided,consultingServicesProvided,input-question,,None,,FALSE,,,9/24/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,Chain from 160,FALSE,102
+1261,,14950,"Other, please explain",Other,other,input-question,,,,FALSE,,,9/24/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,chained from 175,FALSE,103
+134,,11400,Does your business provide any full body massage therapy sessions?,Full Body Massage Therapy,fullBodyMassageTherapy,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,duplicate see 73,TRUE,104
+135,,11500,Approximately what percentage of your annual revenue comes from providing educational instruction to students seeking a license in your profession?,Educational Instruction Revenue,educationalInstructionRevenue,radio-question,"None
+1%-25%
+26%-50%
+51% - 75%
+76% - 100%",None,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,dupe see 69,TRUE,105
+136,,11600,What type of events are primarily planned or promoted by your business?,Type of Events Promoted,typeOfEventsPromoted,radio-question,"Catered events
+Charitable events
+Competitions
+Concerts
+Conventions
+Corporate events/meetings
+Festivals
+Fundraisers
+Government sponsored events – Federal
+Government Sponsored Events – state, local, or foreign
+Political events/conventions/fundraisers
+Social affairs/weddings/parties
+Other; Please explain the type of events you plan or promote and provide your business’s website address (if
+you have one).",None,,TRUE,"Other; Please explain the type of events you plan or promote and provide your business’s website address (if
+you have one).",1258,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,106
+137,,11700,Does your business only host or conduct events for itself?,Host or Conduct Events,hostOrConductEvents,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,Missing from Questions,FALSE,107
+138,,11800,"Does your business promote media, artists or entertainers on behalf of or for any entertainment, publishing, music,
+internet or media company?",Promote Media or Artists,promoteMediaOrArtists,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,108
+139,,11900,Do you maintain current and valid professional certifications or designations as required or recognized by industry standards?,Professional Certification Maintained,professionalCertificationMaintained,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,TRUE,109
+140,,12000,"Do you or your business’s employees testify at judicial, administrative, arbitration or other proceedings?",Testify at Proceedings,testifyAtProceedings,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,Note Endorsement maybe incorrect,FALSE,110
+141,,12100,"Do you perform any services as an EMT, Paramedic or Lifeguard?","EMT, Paramedic or Lifeguard",emtParamedicOrLifeguard,radio-question,"Yes
+No",KO,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,Need to check if the class of business has two separate endorsements,FALSE,111
+142,,12200,Who are you primarily training and/or certifying?,Primarily Training or Certifying,primarilyTrainingOrCertifying,radio-question,"Childcare providers
+Educational professionals
+Healthcare professionals
+Parents
+Recreational sport instructors, trainers or supervisors 
+Other",None,,TRUE,Other,1259,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,112
+144,,12300,"Does your business own, host or run any website:
+• that contains any pornographic materials
+• contains user generated content
+• that is a social networking website?",Host or Run Website,hostOrRunWebsite,radio-question,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,113
+145,,12400,"Which of the following does your business implement?
+• Customer sign-off on deliverables",Business,business,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,114
+147,,12500,• Formal change management procedures,Formal Change Management Procedures,formalChangeManagementProcedures,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,115
+148,,12600,• Legal review of contracts,Legal ReviewContracts,legalReviewContracts,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,116
+149,,12700,• Contracts with indemnification clauses in your favor,Indemnification ClausesFavor,indemnificationClausesFavor,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,117
+150,,12800,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,TRUE,118
+151,,12900,"Do your contracts state that to the best of your knowledge any materials or intellectual property created are original
+and do not infringe upon the intellectual property rights of others?",Intellectual Property Original,intellectualPropertyOriginal,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,119
+152,,13000,"Do you have a process in place to screen materials for any potential violations of another party’s copyrights,
+trademarks or other intellectual property rights?",Intellectual Property Violation Screening,intellectualPropertyViolationScreening,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,120
+154,,13100,"Do you have a process in place to screen materials for potential libel, slander or advertising injury?",Libel or Slander Screening,libelOrSlanderScreening,radio-question,"Yes
+No
+Not Applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,121
+155,,13200,"Do you maintain current and valid professional certifications or designations as required or recognized by industry
+standards?",Professional Certification Maintained,professionalCertificationMaintained,YesNo,"Yes
+No
+",KO,No,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,122
+156,,13300,"Do you or your employees perform or assist in any of the following services or treatments?
+• Catheterization (other than urinary or umbilical)
+• Diagnosing conditions, disorders, or diseases
+• Holistic medicine
+• Injections of any kind
+• Infusion therapy
+• Laser treatments
+• Medical marijuana dispensing
+• Organ/sperm/blood services
+• Patient transportation
+• Patient or client care at Your facility or personal residence
+• Physical therapy
+• Research or experimental services
+• Healthcare or home health aide staffing
+• Stress test services",Perform Services or Treatments,performServicesOrTreatments,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,123
+157,,13400,What is the most common age group that you treat?,Common Age Group,commonAgeGroup,radio-question,"Children up to 12 years old
+Teenagers 13 - 17 years old
+Adults 18 - 64 years old
+Seniors 65+ years old",None,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,TRUE,124
+158,,13500,"As required by state law, are you and your employees properly trained or certified to administer, dispense, or assist in providing medications to patients?",Provided Medication Administration Training,providedMedicationAdministrationTraining,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,125
+160,,13600,What type of consulting services does your business primarily provide?,Primary Consulting Service Type,primaryConsultingServiceType,radio-question,"Business continuity planning/disaster recovery
+Employee compensation programs/payroll consulting
+General business operations and strategy
+Employment practices (including employment contracts)
+Organizational structure
+Payroll consulting
+Sarbanes-Oxley compliance
+Union issues (including contract negotiation)
+Other; Please explain the type of consulting services you provide and provide your business’s website address
+(if you have one).",SoftHold,"Other; Please explain the type of consulting services you provide and provide your business’s website address
+(if you have one).",TRUE,"Other; Please explain the type of consulting services you provide and provide your business’s website address
+(if you have one).",1260,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,hold if other is selected.,FALSE,126
+161,,13700,"Does your business provide any of the following services?
+• Aerospace consulting or advice
+• Actuarial advice
+• Architecture or engineering advice
+• Construction management or advice
+• Credit counseling
+• Environmental consulting or advice
+• Financing or financial auditing
+• General contracting
+• Investment or tax advice
+• Insurance placement or advice
+• Land acquisition
+• Law enforcement training
+• Legal advice
+• Lobbying and/or political advice
+• Medical advice
+• Mergers and acquisitions or business valuations
+• Mining consulting or advice
+• Oil, gas, or petroleum consulting or advice
+• Safety consulting or advice
+• Sales representative",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,127
+162,,13800,"As required by state law, are you and your employees properly trained or certified to administer, dispense, or assist in providing medications to patients?",Provided Medication Administration Training,providedMedicationAdministrationTraining,radio-question,"Yes
+No
+Not applicable",KO,NO,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,Does not belong with this class of business Human resources (HR),TRUE,128
+163,,13900,What type of consulting services does your business primarily provide?,Primary Consulting Service Type,primaryConsultingServiceType,checkbox-question,"Business continuity planning/disaster recovery
+Employee compensation programs/payroll consulting
+General business operations and strategy
+Employment practices (including employment contracts)
+Organizational structure
+Payroll consulting
+Sarbanes-Oxley compliance
+Union issues (including contract negotiation)
+Other; Please explain the type of consulting services you provide and provide your business’s website address
+(if you have one).",,,TRUE,"Other; Please explain the type of consulting services you provide and provide your business’s website address
+(if you have one).",,6/11/2018,V9.0.91,6/25/2018,V9.0.91,FALSE,,Not part of the business class for Human Resources,FALSE,129
+166,,14100,In what industry do the majority of your clients work?,Client Industry,clientIndustry,radio-question,"Agricultural/mining
+Aerospace
+Construction
+Education
+Government – Federal
+Government – state, local, or foreign
+Energy/utilities
+Financial institutions
+Individual consumers
+Medical/healthcare-related
+Media/entertainment
+Payment processors
+Professional service providers (not otherwise listed)
+Retail/wholesale trade/consumer products
+Technology
+Transportation (not including aerospace)
+Other/multiple industries; please explain",None,,TRUE,Other/multiple industries; please explain,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,130
+171,,14600,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,NO,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,TRUE,131
+173,,14700,Do your contracts state that to the best of your knowledge any materials or intellectual property created are original and do not infringe upon the intellectual property rights of others?,Intellectual Property Original,intellectualPropertyOriginal,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,132
+174,,14800,"Do you perform any of these services?
+• Prescribe or dispense herbs or herbal drugs
+• Prescribe or dispense over the counter or prescription drugs
+• Do you perform hypnosis as a form of entertainment for an audience",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,133
+175,,14900,What is the most common reason for patients to seek treatment from you?,Common Treatment Reason,commonTreatmentReason,radio-question,"Addiction
+General body aches, pains and discomfort
+Insomnia
+Relieving Stress
+Sexual disorders
+Other, please explain",None,,TRUE,"Other, please explain",1261,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,134
+176,,15000,What is the most common age group that you treat?,Common Age Group,commonAgeGroup,radio-question,"Children up to 12 years old
+Teenagers 13 - 17 years old
+Adults 18 - 64 years old
+Seniors 65+ years old",None,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,TRUE,135
+177,,15100,"Does your business provide any of the following services?
+• Actuarial advice
+• Financing or financial auditing
+• Investment or tax advice
+• Legal advice
+• Lobbying and/or political advice
+• Medical advice
+• Mergers and acquisitions or business valuations",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,136
+178,,15200,"Does your business provide insurance placement or advice for any of the following insurance products or services?
+• Aviation insurance;
+• Health Maintenance Organization (HMO) plans;
+• Lawyers liability insurance;
+• Mining insurance;
+• Multiple Employer Welfare Arrangements (MEWA);
+• Variable annuities, mutual funds, stocks, or bonds;
+• Variable life insurance; or
+• Yacht insurance",Insurance Products or Services Placement,insuranceProductsOrServicesPlacement,radio-question,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,137
+179,,15300,"Does your business provide services in the capacity of the following?
+• Managing General Agent (MGA);
+• Managing General Underwriter (MGU);
+• Professional Employer Organization (PEO);
+• Program administrator or Third Party Administrator (TPA);
+• Reinsurance intermediary;
+• Risk Retention Group (RRG); or
+• Wholesale broker",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,138
+183,1,15400,Does your business perform an annual account review with each of your clients?,Perform Annual Account Review,performAnnualAccountReview,radio-question,"Always
+Sometimes
+Never",KO,"Sometimes ||
+Never",FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,139
+186,,15500,What type of insurance placement services does your business provide?,Type of Insurance Placement Services,typeOfInsurancePlacementServices,radio-question,"Personal Lines
+Commercial Lines
+Life, Accident, or Health",None,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,140
+187,,15600,"Do you or any of your subcontractors provide any of the following services or work on any projects involving the
+following materials or infrastructure?
+• Aerospace consulting or advice
+• Amusement rides, pools or playgrounds
+• Architecture or engineering advice
+• Asbestos, lead, or mold evaluation or abatement
+• Bridges, dams, harbors, mines, piers, or tunnels
+• Construction management or advice
+• Construction, maintenance, repair, renovation, or property preservation services
+• Design/build
+• Emergency response or clean-up of any hazardous waste
+• Environmental consulting or advice
+• Financing or Financial auditing
+• Foundation, sheeting or retaining wall design
+• General contracting
+• Hydraulic fracturing, hydrofracturing, or fracking
+• Inspections as part of a real estate transaction
+• Insurance placement or advice
+• Investment or tax advice
+• Laboratory testing
+• Land acquisition advice
+• Land surveying, boundary surveying, or construction staking
+• Legal advice
+• Mining consulting or advice
+• Oil, gas, or petroleum consulting or advice
+• Real estate appraisals
+• Underground storage tanks or utilities, and/or any other subsurface condition",Materials or Infrastructure Services,materialsOrInfrastructureServices,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,FALSE,141
+188,,15700,"Do you provide replacement cost valuation services?
+If ‘Yes,’ above: What is the maximum replacement cost value for any home or building you inspect?",Replacement Cost Valuation Services,replacementCostValuationServices,radio-question,"Yes
+No",None,,TRUE,Yes,1262,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,"Should the chaining field be text box, also should this be a separate questions",FALSE,142
+189,,15800,Does your business require customer sign-off on deliverables?,Customer Sign-0ff,customerSignoff,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,143
+190,,15900,Do you subcontract any professional services?,Subcontract Professional Services,subcontractProfessionalServices,radio-question,"Yes
+No",None,,TRUE,Yes,1263,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,Need to double check endorsement if this is KO and if the explanation should be chaining,FALSE,144
+191,,16000,"Other than any design or project management, do you or any of your subcontractors directly perform any of the following physical services?
+• Carpentry
+• Construction or demolition
+• Electrical
+• Equipment installation or repair
+• Flooring
+• Lawn or garden maintenance
+• Painting
+• Plumbing
+• Roofing
+• Tiling
+• Any other physical maintenance/repair services?",Perform Physical Services,performPhysicalServices,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,145
+194,,16300,"What type of IT consulting or technology services do you primarily provide?
+• Application Service Provider (ASP)
+• Custom software programming/development
+• Data processing, analysis, and database design
+• Domain Name Registration (DNS) Services
+• Hosting, facilitating and conducting electronic auctions
+• Game developer
+• IT consulting and/or IT project management
+• Internet content aggregator/web portal
+• Internet hosting services
+• Internet search engine
+• Internet Service Provider (ISP)
+• Internet/on-line publisher of content
+• Network security design and consulting
+• Payment processing services
+• Smartphone/mobile phone/tablet application development
+• Systems/hardware/network installation, maintenance and support
+• Systems/network design, integration and advice
+• Technology training
+• Third-party software installation, customization, and support
+• Value Added Reseller (VAR) of hardware of others
+• Website design
+• Other technology services",Primary Type Of IT Consulting,primaryTypeOfItConsulting,radio-question,,None,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,Need to speak with Adam if info only and need to add other endorsement,FALSE,146
+195,,16400,"Does your business conduct any of the following activities?
+• Manufacture, design, or assist in the design of any hardware or components. (This does not apply if your
+business is a Value Added Reseller of third-party hardware.)
+• Create, support, or work on software that executes securities transactions, makes medical diagnoses, or is
+involved in manufacturing or process control.
+• Own, host, or run any website that contains any pornographic materials or user generated content.
+• Own, or manage a social networking or auction website. (This does not apply to third-party sites where you offer hosting services only.)
+• Operate as a Voice Over IP Service Provider (This does not apply to use of a third –party VOIP service provider
+to conduct your own business’s telephone calls.)",Business Conduct Activities,businessConductActivities,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,147
+196,,16500,In what industry do the majority of your clients work?,Client Industry,client Industry,radio-question,"Agricultural/mining
+Aerospace
+Construction
+Education
+Government – Federal
+Government – state, local, or foreign
+Energy/utilities
+Financial institutions
+Individual consumers
+Medical/healthcare-related
+Media/entertainment (including gaming)
+Payment processors
+Professional service providers (not otherwise listed)
+Retail/wholesale trade/consumer products
+Technology
+Transportation (not including aerospace)
+Other/multiple industries; please explain",None,,TRUE,Other/multiple industries; please explain,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,148
+199,,12650,Dedicated customer support?,Dedicated Customer Support,dedicatedCustomerSupport,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,149
+202,,17100,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,TRUE,150
+203,,17200,Do your contracts state that to the best of your knowledge any materials or intellectual property created are original and do not infringe upon the intellectual property rights of others?,Intellectual Property Original,intellectualPropertyOriginal,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,151
+204,,17300,Do you have procedures in place to ensure that your software code does not infringe the software copyrights of others?,Software Copyrights Infringement,softwareCopyrightsInfringement,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,,FALSE,152
+205,,17400,"Do you or any of your subcontractors provide any of the following services or work on any projects involving the following materials or infrastructure?
+• Aerospace consulting or advice
+• Amusement rides, pools or playgrounds
+• Architecture or engineering advice
+• Asbestos, lead, or mold evaluation or abatement
+• Bridges, dams, harbors, highways, mines, piers, subdivisions, or tunnels
+• Construction cost estimates
+• Construction management or advice
+• Construction, maintenance, repair, renovation, or property preservation services
+• Design/build
+• Emergency response or clean-up of any hazardous waste
+• Environmental consulting or advice
+• Financing or financial auditing
+• Foundation, sheeting, or retaining wall design
+• General contracting
+• Ground testing
+• Hydraulic fracturing, hydrofracturing, or fracking
+• Inspections as part of a real estate transaction
+• Insurance placement or advice
+• Investment or tax advice
+• Laboratory testing
+• Land acquisition advice
+• Legal advice
+• Mining consulting or advice
+• Oil, gas, or petroleum consulting or advice
+• Quantity surveys or quantity estimates
+• Real estate appraisals
+• Underground storage tanks, utilities, and/or any other subsurface condition",Materials or Infrastructure Services,materialsOrInfrastructureServices,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,153
+207,,17600,"Does your business conduct any of the following activities?
+• Mental health counseling
+• Medical counseling (in-patient or out-patient)
+• Substance abuse counseling
+• Social work
+• Family/marriage counseling",Business Conduct Activities,businessConductActivities,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,154
+208,,17700,Do you maintain current and valid professional certifications or designations as required or recognized by industry standards?,Professional Certification Maintained,professionalCertificationMaintained,YesNo,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,155
+209,,17800,What type of consulting services does your business primarily provide?,Primary Type of Consulting,primaryTypeOfConsulting,radio-question,"General business operations and strategy
+Intellectual property
+Marketing campaigns (servicing, and support)
+Marketing plan development/design, research and advice
+Market research
+Media planning/buying
+Organizational structure
+Product development and testing
+Project management
+Other; Please explain the type of consulting services you provide and provide your business’s website address
+(if you have one).",KO,"General business operations and strategy !!
+Intellectual property !!
+Organizational structure",FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,156
+211,,17900,"Does your business provide any of the following services?
+• Architecture or engineering advice
+• Construction management or advice
+• Legal advice
+• Law enforcement training
+• Lobbying and/or political advice
+• Medical advice
+• Mergers and acquisitions or business valuations",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,157
+212,,18000,In what industry do the majority of your clients work?,Client Industry,clientIndustry,radio-question,"Agricultural/mining
+Aerospace
+Construction
+Education
+Government – Federal
+Government – state, local, or foreign
+Energy/utilities
+Financial institutions
+Individual consumers
+Medical/healthcare-related
+Media/entertainment
+Payment processors
+Professional service providers (not otherwise listed)
+Retail/wholesale trade/consumer products
+Technology
+Transportation (not including aerospace)
+Other/multiple industries; please explain",None,,TRUE,"Other/multiple industries; please explain
+
+NOTE: Should this be a CheckBoxGroup (select many)",,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,Not sure on chaining question and if yes to other how do we handled,TRUE,158
+1043,,18500,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,159
+1044,,18600,Do your contracts state that to the best of your knowledge any materials or intellectual property created are original and do not infringe upon the intellectual property rights of others?,Intellectual Property Original,intellectualPropertyOriginal,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,160
+1045,,18700,"Do you perform any of these services?
+• Administer or monitor detoxification programs
+• Operate any residential treatment facilites
+• Prescribe or dispense herbs or herbal drugs
+• Prescribe or dispense over the counter or prescription drugs",Services Performed,servicesPerformed,YesNo,,KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,161
+1046,,18800,What is the most common reason for patients to seek treatment from you?,Common Treatment Reason,commonTreatmentReason,radio-question,"Addiction 
+Healing trauma and emoitional pain
+Insomnia
+Psychological disorders
+Relieving Stress
+æSexual disorders
+Other, please explain",None,,FALSE,,,6/11/2018,V9.0.91,6/25/2018,V9.0.91,FALSE,,Do we need to know other?,FALSE,162
+1047,,18900,"What is the most common age group that you treat?
+• Children up to 12 years old
+• Teenagers 13 - 17 years old
+• Adults 18 - 64 years old
+• Seniors 65+ years old",Common Age Group,commonAgeGroup,radio-question,,None,,FALSE,,,6/11/2018,V9.0.91,6/25/2018,V9.0.91,FALSE,,,FALSE,163
+1048,99,19000,"Does your business provide any of the following activities or use any of this equipment?
+• Administer injections
+• Chemical peels with solutions 31% or greater
+• Colon hydrotherapy services
+• Electrolysis services
+• Laser treatment services
+• Operate saunas or stream rooms
+• Operate tanning beds or booths
+• Permanent make up services
+• Tattoo services",Activities or Use Of Equipment,activitiesOrUseOfEquipment,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,Started adding Insurance questions again which was questions number 177-186,TRUE,164
+1049,,19100,"Does your business provide insurance placement or advice for any of the following insurance products or services?
+• Aviation insurance;
+• Health Maintenance Organization (HMO) plans;
+• Lawyers liability insurance;
+• Mining insurance;
+• Multiple Employer Welfare Arrangements (MEWA);
+• Variable annuities, mutual funds, stocks, or bonds;
+• Variable life insurance; or
+• Yacht insurance",Provide Insurance Placement,provideInsurancePlacement,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,Started adding Insurance questions again which was questions number 177-186,FALSE,165
+1050,,19200,"Does your business provide services in the capacity of the following?
+• Managing General Agent (MGA);
+• Managing General Underwriter (MGU);
+• Professional Employer Organization (PEO);
+• Program administrator or Third Party Administrator (TPA);
+• Reinsurance intermediary;
+• Risk Retention Group (RRG); or Wholesale broker
+• Wholesale broker",Provided Services,providedServices,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,166
+1051,,19300,Does your business perform an annual account review with each of your clients?,Perform Annual Account Review,performAnnualAccountReview,radio-question,"Always
+Sometimes
+Never",,"Sometimes ||
+Never",FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,167
+1052,,19400,What type of insurance placement services does your business provide?,Insurance Placement Services Provided,insurancePlacementServicesProvided,checkbox-question,"Personal Lines
+Commercial Lines
+Life, Accident, or Health",None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,168
+1053,,19500,"Do you or any of your subcontractors provide any of the following services or work on any projects involving the
+following materials or infrastructure?
+• Aerospace consulting or advice
+• Amusement rides, pools or playgrounds
+• Architecture or engineering advice
+• Asbestos, lead, or mold evaluation or abatement
+• Bridges, dams, harbors, mines, piers, or tunnels
+• Construction management or advice
+• Construction, maintenance, repair, renovation, or property preservation services
+• Design/build
+• Emergency response or clean-up of any hazardous waste
+• Environmental consulting or advice
+• Financing or Financial auditing
+• Foundation, sheeting or retaining wall design
+• General contracting
+• Hydraulic fracturing, hydrofracturing, or fracking
+• Inspections as part of a real estate transaction
+• Insurance placement or advice
+• Investment or tax advice
+• Laboratory testing
+• Land acquisition advice
+• Land surveying, boundary surveying, or construction staking
+• Legal advice
+• Mining consulting or advice
+• Oil, gas, or petroleum consulting or advice
+• Real estate appraisals
+• Underground storage tanks or utilities, and/or any other subsurface condition",Materials or Infrastructure Services,materialsOrInfrastructureServices,radio-question,"Yes
+No",,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,169
+1054,,19600,"Do you provide replacement cost valuation services?
+",Provide Replacement Cost Valuation,provideReplacementCostValuation,radio-question,"Yes
+No",,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,170
+1055,,19700,"If ‘Yes,’ above: What is the maximum replacement cost value for any home or building you inspect?",Maximum Replacement Cost,maximumReplacementCost,Text,,chain 1054,,FALSE,,,6/11/2018,V9.0.91,6/19/2018,V9.0.91,FALSE,,,FALSE,171
+1057,,19800,Does your business require customer sign-off on deliverables?,Customer Sign-off,customerSignoff,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,172
+1059,,19900,"Do you subcontract any professional services?
+• Yes
+• No",Subcontract Professional Services,subcontractProfessionalServices,radio-question,"Yes
+No",,,TRUE,,1060,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,173
+1060,,20000,"If 'Yes', Please explain what professional services you subcontract?",Explain Subcontracted Services,explainSubcontractedServices,Text,,,,FALSE,,,6/11/2018,V9.0.91,6/25/2018,V9.0.91,FALSE,,,FALSE,174
+1061,,20100,"Other than any design or project management, do you or any of your subcontractors directly perform any of the
+following physical services?
+• Carpentry
+• Construction or demolition
+• Electrical
+• Equipment installation or repair
+• Flooring
+• Lawn or garden maintenance
+• Painting
+• Plumbing
+• Roofing
+• Tiling
+• Any other physical maintenance/repair services?",Perform Physical Services,performPhysicalServices,radio-question,"Yes
+No",,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,175
+1064,,20400,"What type of IT consulting or technology services do you primarily provide?
+• Application Service Provider (ASP)
+• Custom software programming/development
+• Data processing, analysis, and database design
+• Domain Name Registration (DNS) Services
+• Hosting, facilitating and conducting electronic auctions
+• Game developer
+• IT consulting and/or IT project management
+• Internet content aggregator/web portal
+• Internet hosting services
+• Internet search engine
+• Internet Service Provider (ISP)
+• Internet/on-line publisher of content
+• Network security design and consulting
+• Payment processing services
+• Smartphone/mobile phone/tablet application development
+• Systems/hardware/network installation, maintenance and support
+• Systems/network design, integration and advice
+• Technology training
+• Third-party software installation, customization, and support
+• Value Added Reseller (VAR) of hardware of others
+• Website design",Primary Consulting Service Type,primaryConsultingServiceType,radio-question,"Application Service Provider (ASP)
+Custom software programming/development
+• Data processing, analysis, and database design
+• Domain Name Registration (DNS) Services
+• Hosting, facilitating and conducting electronic auctions
+• Game developer
+• IT consulting and/or IT project management
+• Internet content aggregator/web portal
+• Internet hosting services
+• Internet search engine
+• Internet Service Provider (ISP)
+• Internet/on-line publisher of content
+• Network security design and consulting
+• Payment processing services
+• Smartphone/mobile phone/tablet application development
+• Systems/hardware/network installation, maintenance and support
+• Systems/network design, integration and advice
+• Technology training
+• Third-party software installation, customization, and support
+• Value Added Reseller (VAR) of hardware of others
+Website design",,,FALSE,,,6/11/2018,V9.0.91,,V9.0.91,FALSE,,,FALSE,176
+1065,,20500,"Does your business conduct any of the following activities?
+• Manufacture, design, or assist in the design of any hardware or components. (This does not apply if your
+business is a Value Added Reseller of third-party hardware.)
+• Create, support, or work on software that executes securities transactions, makes medical diagnoses, or is
+involved in manufacturing or process control.
+• Own, host, or run any website that contains any pornographic materials or user generated content.
+• Own, or manage a social networking or auction website. (This does not apply to third-party sites where you
+offer hosting services only.)
+• Operate as a Voice Over IP Service Provider (This does not apply to use of a third –party VOIP service provider
+to conduct your own business’s telephone calls.)",Business Activities,businessActivities,radio-question,"Yes
+No",,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,177
+1068,,20800,"Dedicated customer support
+o Yes
+o No",Dedicated Customer Support,dedicatedCustomerSupport,YesNo,"Yes
+No",KO,,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,178
+1074,,21100,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,TRUE,179
+1075,,21200,"Do your contracts state that to the best of your knowledge any materials or intellectual property created are original
+and do not infringe upon the intellectual property rights of others?",Intellectual Property Original,intellectualPropertyOriginal,radio-question,"Yes
+No
+Not applicable",KO,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,,FALSE,180
+1078,,21500,"Does your business require customer sign-off on deliverables?
+DPL",Customer Sign-off,customerSignoff,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,181
+1079,,21600,"Does your business conduct any of the following activities?
+• Mental health counseling
+• Medical counseling (in-patient or out-patient)
+• Substance abuse counseling
+• Social work
+• Family/marriage counseling",Business Activities,businessActivities,radio-question,"Yes
+No",KO,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,182
+1081,,21700,"Do you maintain current and valid professional certifications or designations as required or recognized by industry
+standards?",Professional Certification Maintained,professionalCertificationMaintained,YesNo,,KO,,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,183
+1082,,21800,What type of consulting services does your business primarily provide?,Primary Consulting Service Type,"primaryConsultingServiceType
+",radio-question,"General business operations and strategy Yes/KO
+Intellectual property Yes/KO
+Marketing campaigns (servicing, and support)
+Marketing plan development/design, research and advice
+Market research
+Media planning/buying
+Organizational structure 
+Product development and testing
+Project management",KO,Organizational structure,FALSE,,,6/11/2018,V9.0.91,6/19/2018,V9.0.91,FALSE,,,FALSE,184
+1083,,21900,"Does your business provide any of the following services?
+• Architecture or engineering advice
+• Construction management or advice
+• Legal advice
+• Law enforcement training
+• Lobbying and/or political advice
+• Medical advice
+* Mergers and acquisitions or business valuations
+",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,185
+1084,,22000,"Does your business conduct any of the following activities?
+• Mental health counseling
+• Medical counseling (in-patient or out-patient)
+• Substance abuse counseling
+• Social work
+• Family/marriage counseling",Business Activities,businessActivities,radio-question,"Yes
+No",KO,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,186
+1085,,22100,"Do you maintain current and valid professional certifications or designations as required or recognized by industry
+standards?
+",Professional Certification Maintained,professionalCertificationMaintained,YesNo,,KO,,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,187
+1086,,22200,What type of consulting services does your business primarily provide? ,Primary Consulting Services,primaryConsultingServices,radio-question,"General business operations and strategy Yes/KO
+Intellectual property Yes/KO
+Marketing campaigns (servicing, and support)
+Marketing plan development/design, research and advice
+Market research
+Media planning/buying
+Organizational structure
+Product development and testing
+Project managemen",KO,Organizational structure,FALSE,,,6/11/2018,V9.0.91,6/19/2018,V9.0.91,FALSE,,,FALSE,188
+1087,,22300,"Does your business provide any of the following services?
+• Architecture or engineering advice
+• Construction management or advice
+• Legal advice
+• Law enforcement training
+• Lobbying and/or political advice
+• Medical advice
+• Mergers and acquisitions or business valuations
+",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,189
+1088,,22400,In what industry do the majority of your clients work?,Client Industry,clientIndustry,radio-question,"Agricultural/mining
+Aerospace
+Construction
+Education
+Government – Federal
+Government – state, local, or foreign
+Energy/utilities
+Financial institutions
+Individual consumers
+Medical/healthcare-related
+Media/entertainment
+Payment processors
+Professional service providers (not otherwise listed)
+Retail/wholesale trade/consumer products
+Technology
+Transportation (not including aerospace)",,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,190
+1093,,22900,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,TRUE,191
+1094,,23000,"Do your contracts state that to the best of your knowledge any materials or intellectual property created are original
+and do not infringe upon the intellectual property rights of others?",Intellectual Property Original,intellectualPropertyOriginal,radio-question,"Yes
+No
+Not applicable",KO,,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,,FALSE,192
+1095,,23100,"Do you have a process in place to screen materials for any potential violations of another party’s copyrights,
+trademarks or other intellectual property rights?",Intellectual Property Violation Screening,intellectualPropertyViolationScreening,radio-question,"Yes
+No
+Not applicable",KO,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,193
+1097,,23200,"Do you have a process in place to screen materials for potential libel, slander or advertising injury?",Libel or Slander Screening,libelOrSlanderScreening,radio-question,"Yes
+No
+Not applicable",KO,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,194
+1099,,23300,Do you perform any of these services?,Services Provided,servicesProvided,radio-question,"Administer or monitor detoxification programs
+Operate any residential treatment facilities
+Prescribe or dispense herbs or herbal drugs
+Prescribe or dispense over the counter or prescription drugs",None,,FALSE,,,6/11/2018,V9.0.91,6/19/2018,V9.0.91,FALSE,,,FALSE,195
+1100,,23400,"Do you treat patients using any of the following?
+• Physical restraints
+• Shock Therapy
+• Sexual Therapy",Patient Treatments,patientTreatments,radio-question,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,196
+1101,,23500,"Do you provide patients with counseling on:
+• Adoption
+• Child Abuse
+• Foster Care",Patient Counseling,patientCounseling,radio-question,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,197
+1102,,23600,What is the most common reason for patients to seek treatment from you?,Common Treatment Reason,commonTreatmentReason,radio-question,"Addiction
+Healing trauma and emotional pain
+Insomnia
+Psychological disorders
+Relieving Stress
+Sexual disorders
+Other; please explain",None,??,FALSE,,,6/11/2018,V9.0.91,6/19/2018,V9.0.91,FALSE,,,FALSE,198
+1103,,23700,What is the most common age group that you treat?,Common Age Group,commonAgeGroup,radio-question,"Children up to 12 years old
+Teenagers 13 - 17 years old
+Adults 18 - 64 years old
+Seniors 65+ years old",None,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,199
+1104,99,23800,"Does your business provide any of the following activities or use any of this equipment?
+• Administer injections
+• Chemical peels with solutions 31% or greater
+• Colon hydrotherapy services
+• Electrolysis services
+• Laser treatment services
+• Operate saunas or stream rooms
+• Operate tanning beds or booths
+• Permanent make up services
+• Skin tag removal services
+• Tattoo services
+",Provide Activities or Equipment,provideActivitiesOrEquipment,YesNo,"Yes
+No",KO,YES,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,dupe see 68,TRUE,200
+1106,,23900,Approximately what percentage of your annual revenue comes from providing educational instruction to students seeking a license in your profession?,Educational Instruction Revenue,educationalInstructionRevenue,radio-question,"None
+1%-25%
+26%-50%
+51% - 75%
+76% - 100%",None,,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,201
+1109,,24000,Are you a franchisee of a salon or spa franchise?,Salon or Spa Franchise,salonOrSpaFranchise,radio-question,"Yes
+No",None,,TRUE,1111,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,FALSE,202
+1111,,24100,"If Yes, Name of Franchisor?",Franchisor,franchisor,Text,,None,,FALSE,,,6/11/2018,V9.0.91,6/19/2018,V9.0.91,FALSE,,,FALSE,203
+1112,,24200,Does your business follow and enforce data and privacy rules with respect to Protected Health Information (PHI) as set forth in the Health Insurance Portability and Accountability Act (HIPAA) and other related state and local laws and regulations?,Enforce PHI and HIPAA,enforcePhiAndHipaa,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,FALSE,204
+1113,,24300,Do you maintain current and valid professional certifications or designations as required or recognized by industry standards?,Professional Certification Maintained,professionalCertificationMaintained,YesNo,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,205
+1114,,24400,Does your business provide any of these additional services?,Additional Services Provided,additionalServicesProveded,checkbox-question,"Barber/hair stylist
+Beautician/cosmetologist
+Esthetician",None,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,"If yes, we need to add the endorsement",FALSE,206
+1117,99,24700,"Does your business provide any of the following services or use any of this equipment?
+• Administer Injections
+• Chemical peels with solutions 31% or greater?
+• Colon hydrotherapy services
+• Electrolysis services
+• Laser treatment services
+• Operate saunas or stream rooms
+• Operate tanning beds or booths
+• Permanent make up services
+• Skin tag removal services
+• Tattoos services
+",Provide Services or Equipment,provideServicesOrEquipment,YesNo,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,Duplicate see #67,TRUE,207
+1118,,24800,Does your business provide any of the following activities?,Provided Activities,providedActivities,radio-question,"Body polishing
+Body wraps
+Chemical peels with solutions up to 30%
+Microdermabrasion",None,,FALSE,,,6/11/2018,V9.0.91,6/25/2018,V9.0.91,FALSE,,,FALSE,208
+1119,,24900,Does your business provide any full body massage therapy sessions?,Full Body Massage Therapy,fullBodyMassageTherapy,YesNo,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,,TRUE,209
+1120,,25000,Approximately what percentage of your annual revenue comes from providing educational instruction to students seeking a license in your profession?,Educational Instruction Revenue,educationalInstructionRevenue,radio-question,"None
+1%-25%
+26%-50%
+51% - 75%
+76% - 100%",None,,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,210
+1121,,25100,Who are your primary clients?,Primary Clients,primaryClients,radio-question,"Businesses (otherwise not listed)
+Financial institutions (e.g.,. banks)
+Individuals
+Law firms
+Mortgage companies, brokers, and/or bankers
+Parties involved in real estate transactions
+Other; please explain",None,,TRUE,Other; please explain,1266,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,211
+1122,,25200,"Does your business ensure that for all transactions, each party whose signature you notarize is identified and in your presence at the time of notarization?",Party Present at Notarization,partyPresentAtNotarization,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,Not offering,FALSE,212
+1123,,25300,Do you maintain current and valid professional licenses as required or recognized by industry standards?,Professional Certification Maintained,professionalCertificationMaintained,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,No offering yet,FALSE,213
+1124,,25400,Do you provide any physical therapy?,Provide Physical Therapy,providePhysicalTherapy,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,214
+1125,,25500,What is the most common age group that you treat?,Common Age Group,commonAgeGroup,radio-question,"Children up to 12 years old
+Teenagers 13 - 17 years old
+Adults 18 - 64 years old
+Seniors 65+ years old",None,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,215
+1126,,25600,What is the most common reason for patients to seek treatment from you?,Common Treatment Reason,commonTreatmentReason,radio-question,"Mental health Learning disabilities
+Physical disabilities
+Other, please explain",None,,TRUE,"Other, please explain",1267,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,216
+1127,,25700,"Does your business provide any of the following services?
+• Adult daycare
+• Childcare or nanny
+• Cleaning or janitorial
+• Financial or investment advice
+• Healthcare or related services
+• Moving
+• Pet sitting or pet care
+• Social work
+• Transportation of people or goods",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,217
+1128,,25800,What is your business’s primary type of client?,Primary Type of Client,primaryTypeOfClient,radio-question,"Elderly person(s)
+Non-individual entities or organizations (e.g., businesses)
+Non-publicly known individuals/families (not otherwise listed)
+Person(s) with disabilities or illness
+Publicly known individuals/families (not otherwise listed)
+Other; Please explain:",None,,TRUE,Other; Please explain:,1268,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,218
+1129,,25900,What is your business’s primary type of client?,Primary Type of Client,primaryTypeOfClient,radio-question,"Elderly person(s)
+Non-individual entities or organizations (e.g., businesses)
+Non-publicly known individuals/families (not otherwise listed)
+Person(s) with disabilities or illness
+Publicly known individuals/families (not otherwise listed)
+Other; please explain",None,,TRUE,Other; please explain,1269,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,219
+1131,,26100,"Do you perform any of these services?
+• Prescribe or dispense herbs or herbal drugs
+• Prescribe or dispense over the counter or prescription drugs",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,220
+1132,,26200,Approximately what percentage of your estimated annual revenue comes from selling dietary supplements?,Dietary Supplements Revenue Percentage,dietarySupplementsRevenuePercentage,radio-question,"None
+1%-25%
+26%-50%
+51% - 75%
+76% - 100%",KO,"1%-25% 
+76% - 100%",FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,"?? Please confirm 1-25 and 76-100 are KO, the others are OK.",FALSE,221
+1133,,26300,Providing educational instruction to students seeking a license in your profession is excluded and NOT covered by this policy.,Student License Exclusion,studentLicenseExclusion,radio-question,"I understand and agree the above is excluded by this policy
+I disagree with the above being excluded by this policy",KO,I disagree with the above being excluded by this policy,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,222
+1136,,26500,Providing any services to a professional athlete is excluded and NOT covered by this policy.,Professional Athlete Exclusion,professionalAthleteExclusion,radio-question,"I understand and agree the above is excluded by this policy
+I disagree with the above being excluded by this policy",KO,I disagree with the above being excluded by this policy,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,223
+1139,,26700,Who are your primary clients?,Primary Clients,primaryClients,radio-question,"Children up to 12 years old
+Teenagers 13 - 17 years old
+Adults 18 - 64 years old
+Seniors 65+ years old",None,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,224
+1141,,26800,"Do you have procedures in place that protect your photographs, negatives, film, images and other related items from physical damage or harm?",Physical Damage Procedures,physicalDamageProcedures,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,225
+1143,,26900,"If you maintain a photo stock library with images owned by other photographers, do you have an indemnification agreement from them to indemnify you from claims arising out of the use of their images?",Photo Stock Indemnification Agreements,photoStockIndemnificationAgreements,radio-question,"Yes
+No
+Don’t maintain such a library, not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,226
+1270,,34800,You or your business are properly and currently licensed / certified as per your state’s applicable rules and statutes,Licensed Per State Rules,licensedPerStateRules,radio-question,"I have read and agree
+I have read and disagree",None,,TRUE,I have read and disagree,1271,9/25/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,"AK,AL,AZ,AR,CA,CO,CT,DE,FL,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,SC,SD,TN,UT,VT,VA,WA,WV,WI,WY",,FALSE,227
+1145,,27000,"If you photograph models, do you obtain a written release from each model appearing in the photographs?",Models Written Release,modelsWrittenRelease,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,,FALSE,228
+1146,,27100,"Arizona, California, Illinois, and New York ONLY:
+You or your business are properly and currently licensed/certified as per your state’s applicable rules and statutes.",Licensed Per State Rules,licensedPerStateRules,radio-question,"I have read and agree.
+I have read and disagree.",SoftHold,I have read and disagree.,TRUE,I have read and disagree.,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,"AZ,CA,IL,NY",FZ:THIS IS STATE SPECIFIC,FALSE,229
+1149,,27200,"Georgia ONLY:
+You or your business are currently and properly certified by an order of a court of competent and appropriate jurisdiction of the State of Georgia.",Certified by Georgia Court,certifiedByGeorgiaCourt,radio-question,"I have read and agree.
+I have read and disagree.",SoftHold,I have read and disagree.,TRUE,I have read and disagree.,,6/11/2018,V9.0.91,6/25/2018,V9.0.91,FALSE,GA,,FALSE,230
+1152,,27300,"Rhode Island ONLY:
+You or your business are properly and currently certified by court an order of a court of competent and appropriate jurisdiction of the State of Rhode Island.",Ceritfied By Rhode Island Court,certifiedByRhodeIslandCourt,radio-question,"I have read and agree.
+I have read and disagree.",SoftHold,I have read and disagree.,TRUE,I have read and disagree,,6/11/2018,V9.0.91,6/25/2018,V9.0.91,FALSE,RI,,FALSE,231
+1153,,27400,"Texas ONLY:
+You or your business • are properly and currently certified by order of the Supreme Court of the State of Texas and have successfully completed all required training (as required by Texas statute) prior to certification.",Certified By Texas Supreme Court,certifiedByTexasSupremeCourt,radio-question,"I have read and agree.
+I have read and disagree",SoftHold,I have read and disagree,TRUE,I have read and disagree,,6/11/2018,V9.0.91,6/25/2018,V9.0.91,FALSE,TX,,FALSE,232
+1155,,27500,"Does your business provide any of the following services?
+• Insurance agent/broker
+• Property preservation
+• Home inspector
+• Property developer or builder.
+o Yes
+o No",Services Provided,servicesProvided,radio-question,,KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,233
+1156,,27600,What types of properties do you manage?,Property Types Managed,Property Types Managed,radio-question,"All residential
+A mixture of residential and commercial properties
+All commercial",None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,234
+1157,,27700,Do you manage any hotel properties or health care facilities?,Manage Health Care or Hotel Properties,manageHealthCareOrHotelProperties,radio-question,"Yes
+No",None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,235
+1159,,27800,"Do you manage or implement any construction, renovation or reconstruction projects on the properties you manage?
+(This does not apply to oversight of routine maintenance.)",Manage Construction on Managed Properties,manageConstructionOnManagedProperties,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,236
+1160,,27900,Do you conduct credit checks on prospective tenants?,Prospective Tenants Credit Check,prospectiveTenantsCreditCheck,radio-question,"Yes
+No",None,,TRUE,Yes,1161,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,237
+1161,,27950,Do you usually obtain a consent form or advise prospective tenants that their credit will be checked?,Prospective Tenants Credit Check Consent,prospectiveTenantsCreditCheckConsent,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,chain from 1160,FALSE,238
+1162,,28100,Do you manage any properties where you have more than a 15% ownership interest?,Manage Properties with 15% or More Ownership,managePropertiesWithFifteenPercentOwnership,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,239
+1163,,28200,"Does your business promote media, artists or entertainers on behalf of or for any entertainment, publishing, music, internet or media company?",Promote Media or Artists,promoteMediaOrArtists,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,240
+1164,,28300,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,TRUE,241
+1165,,28400,Do your contracts state that to the best of your knowledge any materials or intellectual property created are original and do not infringe upon the intellectual property rights of others?,Intellectual Property Original,intellectualPropertyOriginal,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,242
+1167,,28500,"Do you have a process in place to screen materials for any potential violations of another party’s copyrights,
+trademarks or other intellectual property rights?",Intellectual Property Violation Screening,intellectualPropertyViolationScreening,radio-question,"Yes
+No 
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,243
+1169,,28600,"Do you have a process in place to screen materials for potential libel, slander or advertising injury?
+",Libel or Slander Screening,libelOrSlanderScreening,radio-question,"Yes
+No
+Not Applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,244
+1170,,28700,"Does your business provide any of the following services?
+• Insurance agent/broker
+• Mortgage banker/broker
+• Title agent/abstractor
+• Real estate appraiser (for loan valuations, does not apply to brokerage service)
+• Home inspector
+• Property developer or builder",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,245
+1171,,28800,"Including yourself, how many agents/brokers work for you or your firm (including direct employees and
+subcontractors)? Do not include other office support staff.",Number of Agents or Brokers,Number of Agents or Brokers,input-question,,None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,246
+1172,,28900,"Are the licenses for all agents working with your firm current, and in good standing with your state’s licensing board?",Licenses for All Agents in Good Standing,Licenses for All Agents in Good Standing,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,247
+1173,,29000,What is you or your firm’s approximate average commission received per sale (prior to any sharing arrangements)?,Approximate Average Commission per Sale,approximateAverageCommissionPerSale,input-question,,None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,248
+1175,,29100,Does your business sell any properties owned by you or an affiliated entity?,Sell Properties Owned by You,Sell Properties Owned by You,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,249
+1176,,29200,"Does your business have any exclusive sales relationships with any real estate developer, builder or construction company?",Exclusive Sales Relationships with Real Estate Developer,"exclusiveSalesRelationshipsWithRealEstateDeveloper
+",radio-question,,KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,250
+1177,,29300,"Approximately, what percentage of your commissions are due to the sale of commercial properties?",Commissions From Commercial Properties Sales,commissionsFromCommercialPropertiesSales,input-question,,None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,251
+1178,,29400,"Approximately, what percentage of your commissions are due to “short sales”?",Commissions From Short Sales,CommissionsFromShortSales,input-question,,None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,252
+1179,,29500,"Approximately, what percentage of your commissions are dual agency sales, where you represent both the buyer and seller in the same transaction?",Commissions From Dual Agency Sales,commissionsFromDualAgencySales,input-question,,None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,253
+1180,,29600,"Does your business:
+• Act as a Professional Employer Organization (PEO).
+• Lease employees or provide employees on secondment to other organizations.
+• Perform any recruiting activities for medical personnel, including but not limited to nurses, doctors, dentists, etc.",Business Activities,businessActivities,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,254
+1181,,29700,What types of jobs are primarily placed and/or recruited by your business? (Please note that medical placements are ineligible for coverage):,Jobs Primarily Placed or Recruited,jobsPrimarliyPlacedOrRecruited,radio-question,"Accountants
+Administrative/office staff
+Architects and engineers
+Attorneys
+Executive/management
+Information Technology (IT) professionals",SoftHold,Other; please explain,TRUE,Other; please explain,1278,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,255
+1183,,29900,Do you conduct background checks on your applicants prior to placement?,Applicant Background Checks,applicantBackgroundChecks,radio-question,"Always
+Sometimes
+Never",KO,"Sometimes ||
+Never",FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,256
+1185,,30000,Do you test and evaluate your applicants’ skills and qualifications prior to placement?,Evaluate Applicant Skills,Evaluate Applicant Skills,radio-question,"Always
+Sometimes
+Never",KO,"Sometimes ||
+Never",FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,257
+1186,,30100,"Do you maintain current and valid professional certifications or designations as required or recognized by industry standards?
+",Professional Certification Maintained,professionalCertificationMaintained,YesNo,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,258
+1187,,30200,What type of research does your business primarily provide?,Primary Research Type,primaryResearchType,radio-question,"Economic research (general macro/micro-economic issues)
+Environmental matters
+General research
+Industry-specific matters (as per your client’s industry)
+Intellectual property
+Law
+Market/customer research
+Regulatory/governmental issues
+Other; Please explain the type of consulting services you provide and provide your business’s website address (if you have one).",None,,TRUE,Other; Please explain the type of consulting services you provide and provide your business’s website address (if you have one).,1189,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,259
+1189,,30300,Other; Please explain the type of consulting services you provide and provide your business’s website address (if you have one).,Type of Consulting Services Provided,typeOfConsultingServicesProvided,input-question,,None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,chain to 1187,FALSE,260
+1190,,30400,"Does your business provide any of the following services?
+• Aerospace consulting or advice
+• Actuarial advice
+• Appraisals
+• Architecture or engineering advice
+• Background checks
+• Construction management or advice
+• Clinical or medical trials
+• Credit counseling
+• Environmental consulting or advice
+• Financing or financial auditing
+• General contracting
+• Investment or tax advice
+• Insurance placement or advice
+• Land acquisition
+• Law enforcement training
+• Legal advice
+• Lobbying and/or political advice
+• Medical advice
+• Mergers and acquisitions or business valuations
+• Mining consulting or advice
+• Oil, gas, or petroleum consulting or advice
+• Private investigations
+• Safety consulting or advice
+• Sales representative
+• Title abstracting",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,261
+1191,,30500,In what industry do the majority of your clients work?,Client Industry,clientIndustry,radio-question,"Agricultural/mining
+Aerospace
+Construction
+Education
+Government – Federal
+Government – state, local, or foreign
+Energy/utilities
+Financial institutions
+Individual consumers
+Medical/healthcare-related
+Media/entertainment
+Payment processors
+Professional service providers (not otherwise listed)
+Retail/wholesale trade/consumer products
+Technology
+Transportation (not including aerospace)",None,,TRUE,Other/multiple industries; please explain,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,TRUE,262
+1196,,31000,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,TRUE,263
+1197,,31100,Do your contracts state that to the best of your knowledge any materials or intellectual property created are original and do not infringe upon the intellectual property rights of others?,Intellectual Property Original,intellectualPropertyOriginal,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,264
+1198,,31200,"Do you have a process in place to screen materials for any potential violations of another party’s copyrights,
+trademarks or other intellectual property rights?
+",Intellectual Property Violation Screening,intellectualPropertyViolationScreening,radio-question,"Yes
+No
+Not Applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,265
+1199,,31300,"Do you have a process in place to screen materials for potential libel, slander or advertising injury?",Libel or Slander Screening,libelOrSlanderScreening,radio-question,"Yes
+No
+Not Applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,266
+1201,,31400,Are your procedures and guidelines in compliance with OSHA and/or other government safety requirements?,Compliance with OSHA,compliantWithOsha,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,267
+1202,,31500,"Do you or any of your clients work in any of the following areas or industries?
+• Aerospace or aviation
+• Amusement rides, pools, or playgrounds
+• Bridges, dams, harbors, mines, piers, or tunnels
+• Construction sites
+• Environmental
+• Food or drug processing
+• Foundation, sheeting, or retaining walls
+• Hazardous waste
+• Mining
+• Oil and gas
+• Railroads
+• Underground storage tanks or utilities",Client Industries,clientIndustries,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,268
+1262,,15750,"If ‘Yes,’ above: What is the maximum replacement cost value for any home or building you inspect?",Maximum Replacement Cost,maximumReplacementCost,input-question,,None,,FALSE,,,9/24/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,Changed from 188,FALSE,269
+1203,,31600,"Does your business provide any of the following services?
+• Aerospace consulting or advice
+• Actuarial advice
+• Architecture or engineering advice
+• Construction management or advice
+• Credit counseling
+• Environmental consulting or advice
+• Financing or financial auditing
+• Home or building inspections
+• Investment or tax advice
+• Insurance placement or advice
+• Land acquisition advice
+• Law enforcement training
+• Legal advice
+• Lobbying and/or political advice
+• Medical advice
+• Mergers and acquisitions or business valuations
+• Mining consulting or advice
+• Oil, gas, or petroleum consulting or advice
+• Sales representative
+• Security guard services or personnel",Services Provided,servicesProvided,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,270
+1204,,31700,Does your business require customer sign-off on deliverables?,Customer Sign-off,customerSignoff,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,271
+1205,,31800,Are you hired as an independent contractor by the original manufacturer(s)?,Independent Contractor by Manufacturer,independentContractorByManufacturer,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,272
+1206,,31900,Do the manufacturers you work for have branches or operations located in the United States?,Manufacturer Operations in US,maufacturerOperationsInUs,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,273
+1207,,32000,Do you have storage or warehouse facilities for inventory?,Storage or Warehouse Facilities,storageOrWarehouseFacilities,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,274
+1208,,32100,"Do you sell or distribute any of the following items, products, or supplies?
+• Alcohol, tobacco, electronic cigarette, or vapor products or supplies
+• Auto, boat, or utility vehicles and/or parts
+• Chemicals or chemical supplies
+• Farming or gardening supplies
+• Gun, firearm, or ammunition products or supplies
+• Pharmaceutical or medical devices
+• Hazardous materials
+• Health food, herbs, vitamins, or supplements
+Herbicides or pesticides
+• Pet or pet supplies",Sell or Distribute,sellOrDistribute,radio-question,"Yes
+No",None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,Endorsement missing: no answer at this time,FALSE,275
+1209,,32200,"Do you perform any of these services?
+• Administer or monitor detoxification programs
+• Operate any residential treatment facilities
+• Prescribe or dispense herbs or herbal drugs
+• Prescribe or dispense over the counter or prescription drugs",Services Performed,servicesPerformed,YesNo,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,276
+1210,,32300,What type of social services do you provide?,Type of Social Services Provided,typeOfSocialServicesProvided,radio-question,"Child welfare and family social services
+Medical and public health social services
+Mental health and substance abuse social services
+Research and public policy social services 
+Other, please explain",None,,TRUE,"Other, please explain",1211,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,277
+1211,,32400,Other:,Other,other,input-question,,chain 1210,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,chain from 1210,FALSE,278
+1212,,32500,What is the most common age group that you treat?,Common Age Group,commonAgeGroup,radio-question,"Children up to 12 years old
+Teenagers 13 - 17 years old
+Adults 18 - 64 years old
+Seniors 65+ years old",None,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,279
+1213,,32600,"Do you perform any of these services?
+• Administer or monitor detoxification programs
+• Drug testing
+• Operate any residential treatment facilities
+• Prescribe or dispense herbs or herbal drugs
+• Prescribe or dispense over the counter or prescription drugs",Services Performed,servicesPerformed,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,280
+1214,,32700,What is the most common age group that you treat?,Common Age Group,commonAgeGroup,radio-question,"Children up to 12 years old
+Teenagers 13 - 17 years old
+Adults 18 - 64 years old
+Seniors 65+ years old",None,,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,281
+1215,,32800,"Does your business conduct financial audits or provide attestation services?
+",Conduct Financial Audits,conductFinancialAudits,radio-question,"Yes
+No",,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,Need to check endorsement for answer,TRUE,282
+1216,,32900,What is your business’s primary type of client?,Primary Type of Client,primaryTypeOfClient,radio-question,"Businesses
+Publicly known individuals/families
+Other; please explain",None,,TRUE,Other; please explain,1279,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,283
+1217,,33000,"Does your business conduct any of the following training, instruction, or services?
+• Animal
+• Architecture or engineering
+• Aviation
+• Behind the wheel driving
+• Cooking or food preparation
+• Construction management
+• Daycare or childcare
+• Fitness
+• Law enforcement
+• Medical
+• Safety
+• Security guard",Conduct Training or Instruction Services,conductTrainingOrInstructionServices,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,284
+1218,,33100,"Is your business any of the following?
+• Public/private/charter school
+• College or university
+• Day care or eldercare facility
+• Technical or vocational school",Business Activities,businessActivities,radio-question,"Yes
+No",KO,Yes,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,285
+1219,,33200,What types of instruction are primarily offered by your business? (Please note that schools and formal institutions of education are not eligible for coverage):,Types of Instruction,typesOfInstruction,radio-question,"Corporate/business skills (e.g., sales, communication, writing)
+Individuals (not otherwise listed)
+Life/career/executive coaching
+Religious
+Students
+Transportation/equipment operation (e.g., cranes, forklifts, Commercial Driver’s License)
+Vocational/trades/artisans (e.g., plumbing, carpentry, welding)
+Other; please explain the type of services you provide and provide your business’s website address (if you have
+one).",None,,TRUE,"Other; please explain the type of services you provide and provide your business’s website address (if you have
+one).",1220,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,286
+1220,,33300,Other,Other,other,Text,,None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,chain from 1219,FALSE,287
+1221,,33400,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,TRUE,288
+1222,,33500,Do your contracts state that to the best of your knowledge any materials or intellectual property created are original and do not infringe upon the intellectual property rights of others?,Intellectual Property Original,intellectualPropertyOriginal,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,289
+1223,,33600,"Do you maintain current and valid professional certifications or designations as required or recognized by industry standards?
+",Professional Certification Maintained,professionalCertificationMaintained,YesNo,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,290
+1224,,33700,"Do your contracts clearly state the ownership rights, licensing, and use of any materials or intellectual property created for or during an engagement?",Intellectual Property Ownership,intellectualPropertyOwnership,radio-question,"Yes
+No
+Not applicable",KO,No,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,FALSE,,,TRUE,291
+1225,,33800,In what industry do the majority of your clients work?,Client Industry,clientIndustry,radio-question,"Agricultural/mining
+Aerospace
+Construction
+Education
+Government – Federal
+Government – state, local, or foreign
+Energy/utilities
+Financial institutions
+Individual consumers
+Medical/healthcare-related
+Media/entertainment
+Payment processors
+Professional service providers (not otherwise listed)
+Retail/wholesale trade/consumer products
+Technology
+Transportation (not including aerospace)
+Other/multiple industries; please explain",None,,TRUE,Other/multiple industries; please explain,1227,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,292
+1227,,33900,Other,Other,other,Text,,None,,FALSE,,,6/11/2018,V9.0.91,6/19/2018,V9.0.91,FALSE,,,FALSE,293
+1228,,34000,Do you maintain current and valid professional certifications or designations as required or recognized by industry standards?,Professional Certification Maintained,professionalCertificationMaintained,YesNo,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/11/2018,V9.0.91,FALSE,,,TRUE,294
+1229,,34100,What types of travel are primarily arranged by your business?,Types of Travel,typesOfTravel,radio-question,"Business/corporate travel
+Personal/leisure travel
+Tours/groups",None,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,295
+1230,,34200,Do you maintain current and valid professional certifications or designations as required or recognized by industry standards?,Professional Certification Maintained,professionalCertificationMaintained,radio-question,"Yes
+No",KO,No,FALSE,,,6/11/2018,V9.0.91,9/24/2018,V9.0.91,FALSE,,,TRUE,296
+1231,,1115,"For the next 12 months, what is your business’s estimated total annual revenue?",Estimated Total Annual Revenue,estimatedTotalAnnualRevenue,input-question,,,,FALSE,,,6/11/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,297
+1232,,4105,Please explain what professional services you subcontract?,Professional Services Subcontracted,professionalServicesSubcontracted,input-question,"Yes
+No",KO,Yes,FALSE,,,6/14/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,298
+1234,,4510,Other project category?,Other Project Category,otherProjectCategory,Text,,,,FALSE,,,6/14/2018,V9.0.91,6/14/2018,V9.0.91,FALSE,,,FALSE,299
+1236,,4710,Other common reason,Other Common Reason,otherCommonReason,Text,,None,,FALSE,,,6/14/2018,V9.0.91,,V9.0.91,FALSE,,,FALSE,300
+1239,,10,"What's the total number of credit types listed below you currently use to finance your business?
+• Business loans, including Small Business Administration (SBA) loans, mortgages, lines of credit, etc.
+• Business credit cards
+• Overdraft lines of credit of $5,000 or more
+• Long-term (30 days+) vendor/supplier accounts of $5,000 or more
+• Auto or equipment leases (in excess of $5,000 of total value)",Credit Types Used,creditTypesUsed,radio-question,"0
+1
+2
+3
+4
+5+",,,FALSE,,,9/12/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,NJ,,FALSE,301
+1240,,25,What best describes your business’s ownership structure?:,Ownership Structure,ownershipStructure,radio-question,"Individual/Sole Proprietor
+Joint Venture
+Limited Liability Company
+Partnership
+Trust
+Corporation or other Organization (other than the above)",,,FALSE,,,9/12/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,302
+1241,,30,"If you purchase a policy, when would you like your coverage to start?",Coverage Start,coverageStart,date-question,,,,FALSE,,,9/12/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,Must be today or greater.,FALSE,303
+1242,,20,"Other than the business address provided above, how many additional locations does your business own or rent?",Additional Business Locations,additionalBusinessLocations,input-question,,,,FALSE,,,9/12/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,Number,FALSE,304
+1237,,3301,Other,Other,other,Text,,,,FALSE,,,7/13/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,,FALSE,305
+1238,,34300,Other:,Other,other,input-question,,KO,NO,FALSE,,,7/13/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,NJ,Only show for NJ,FALSE,306
+1263,,15950,Please explain what professional services you subcontract?,Professional Services Subcontracted,professionalServicesSubcontracted,input-question,,None,,FALSE,,,9/24/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,chained from 190,FALSE,307
+1267,,25650,"Other, please explain",Other,other,input-question,,None,,FALSE,,,9/24/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,chain from 1126,FALSE,308
+1264,,32210,"Do you perform any of these services?
+• Administer or monitor detoxification programs
+• Operate any residential treatment facilities
+• Prescribe or dispense herbs or herbal drugs
+• Prescribe or dispense over the counter or prescription drugs",Services Performed,servicesPerformed,radio-question,"Yes
+No",KO,Yes,FALSE,,,9/24/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,309
+1266,,25150,Other; please explain,Other,other,input-question,,None,,FALSE,,,9/24/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,chain from 1121,FALSE,310
+1268,,25850,Other; Please explain:,Other,other,input-question,,None,,FALSE,,,9/24/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,chain from 1128,FALSE,311
+1269,,25950,Other; please explain,Other,other,input-question,,,,FALSE,,,9/24/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,chain from 1129,FALSE,312
+1258,,11650,Other; Please explain the type of events you plan or promote and provide your business’s website address (ifyou have one).,Other: Type of Events,otherTypeOfEvents,input-question,,None,,FALSE,,,9/24/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,Chained from 136,FALSE,313
+1271,,34850,If ‘disagree: Provide details,Provide Details,provideDetails,input-question,,None,,FALSE,,,9/25/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,chain from 1270,FALSE,314
+1272,,34900,"You or your business are currently and properly certified by an order of a court of competent and appropriate
+jurisdiction of the State of Georgia.",Certified by Court of Georgia,certifiedByCourtOfGeorgia,radio-question,"I have read and agree
+I have read and disagree",None,,FALSE,,1273,9/25/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,GA,,FALSE,315
+1273,,34950,If ‘disagree: Provide details,Provide Details,provideDetails,input-question,,None,,FALSE,,,9/25/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,GA,chain to 1272,FALSE,316
+1274,,35000,"You or your business are properly and currently certified by court an order of a court of competent and appropriate
+jurisdiction of the State of Rhode Island",Certified by Court of Rhode Island,certifiedByCourtOfRhodeIsland,radio-question,"I have read and agree
+I have read and disagree",None,,FALSE,,1275,9/25/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,RI,,FALSE,317
+1275,,35050,If ‘disagree: Provide details,Provide Details,provideDetails,input-question,,None,,FALSE,RI,,9/25/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,318
+1276,,35100,"You or your business:
+are properly and currently certified by order of the Supreme Court of the State of Texas and
+• have successfully completed all required training (as required by Texas statute) prior to certification.",Certified By Texas Supreme Court,certifiedByTexasSupremeCourt,radio-question,"I have read and agree
+I have read and disagree",None,,FALSE,,1277,9/25/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,TX,,FALSE,319
+1277,,35150,If ‘disagree: Provide details,Provide Details,provideDetails,input-question,,None,,FALSE,,,9/25/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,TX,CHAIN from 1276,FALSE,320
+1243,,2410,Other:,Other,other,input-question,,None,,FALSE,,,9/18/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,,FALSE,321
+1244,,24051,Other,Other,other,input-question,,,,FALSE,,,9/18/2018,V9.0.91,,V9.0.91,FALSE,,,FALSE,322
+1245,,4010,Do you disclose that calls may be recorded?,Disclose Calls May Be Recorded,discloseCallsMayBeRecorded,radio-question,"Yes
+No",KO,No,FALSE,,,9/18/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,,FALSE,323
+1246,,4550,Do you provide only Building Inspection Services?,Provide Building Inspection Services,provideBuildingInspectionServices,radio-question,"Yes
+No",None,,FALSE,,,9/18/2018,V9.0.91,9/18/2018,V9.0.91,TRUE,,"If yes, special endorsement.",FALSE,324
+1247,,34400,"Do you do any of the following?
+• Auction properties or other items that your business owns or in which it has a controlling interest
+• Conduct private or other auctions other than public auctions
+• Authenticate the ownership of property(ies) or items auctioned
+• Conduct auctions on-line or over the Internet",Auction Activities,auctionActivities,radio-question,"Yes
+No",KO,Yes,FALSE,,,9/21/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,,FALSE,325
+1248,,34500,Does your business auction:,Items Auctioned,itemsAuctioned,radio-question,"Antiques
+Automobiles/boats and other vehicles
+Fine art, coins, other precious metals and gems
+Personal property
+Real estate
+Valuable papers/documents
+Other; please explain",None,,TRUE,Other; please explain,1249,9/21/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,,FALSE,326
+1249,,34600,Other Please Explain:,Other,other,input-question,,,,FALSE,,,9/21/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,,FALSE,327
+1250,,34700,"Do you maintain current and valid professional certifications or designations as required or recognized by industry
+standards?",Professional Certification Maintained,professionalCertificationMaintained,radio-question,"Yes
+No",KO,No,FALSE,,,9/21/2018,V9.0.91,9/21/2018,V9.0.91,FALSE,,,TRUE,328
+1251,,6650,"Other; Please explain the type of consulting services you provide and provide your business’s website address
+(if you have one)",Other Type of Consulting Services,otherTypeOfConsultingServices,input-question,,None,,FALSE,,,9/21/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,changed from id=78,FALSE,329
+1252,,6850,Other/multiple industries; please explain,Other Industries,otherIndustries,input-question,,None,,FALSE,,,9/21/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,chained from id=80,FALSE,330
+1253,,7350,Other; please explain,Other,other,input-question,,None,,FALSE,,,9/21/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,Chain from 86,FALSE,331
+1254,,7750,Other; please explain,Other,other,input-question,,,,FALSE,,,9/21/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,Chained from 90,FALSE,332
+1255,,8050,"Other; Please explain the type of direct marketing services you provide and provide your business’s website
+address (if you have one).",Other Direct Marketing Services,otherDirectMarketingServices,input-question,,None,,FALSE,,,9/21/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,chained from 93,FALSE,333
+1256,,8250,Other/multiple industries; please explain,Other Industries,otherIndustries,input-question,,None,,FALSE,,,9/21/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,Chain from 95,FALSE,334
+1257,,10250,Other; please explain,Other,other,input-question,,,,FALSE,,,9/21/2018,V9.0.91,9/21/2018,V9.0.91,TRUE,,chained from id=120,FALSE,335
+1259,,12250,Other,Other,other,input-question,,None,,FALSE,,,9/24/2018,V9.0.91,9/24/2018,V9.0.91,TRUE,,Chained from 142,FALSE,336
+1278,,29750,Other; please explain,Other,other,input-question,,None,,FALSE,,,9/25/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,chain from 1181,FALSE,337
+1279,,32950,Other; please explain,Other,other,input-question,,,,FALSE,,,9/25/2018,V9.0.91,9/25/2018,V9.0.91,TRUE,,chain from 1216,FALSE,338

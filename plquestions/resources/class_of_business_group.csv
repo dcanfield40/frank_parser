@@ -1,0 +1,9 @@
+id,class_of_business_group,sort_order,created_at,created_by,updated_at,updated_by,row
+1,Architecture & Engineering,1,4/10/2018,V9.0.91,,V9.0.91,1
+2,"Beauty, Health, Wellbeing",2,4/10/2018,V9.0.91,,V9.0.91,2
+3,Business Consulting,3,4/10/2018,V9.0.91,,V9.0.91,3
+4,IT Consulting/Technology or Technology Services,4,4/10/2018,V9.0.91,,V9.0.91,4
+5,Marketing Consulting,5,4/10/2018,V9.0.91,,V9.0.91,5
+6,Property Management,6,4/10/2018,V9.0.91,,V9.0.91,6
+7,Real Estate Agent,7,4/10/2018,V9.0.91,,V9.0.91,7
+8,_Unclassified,9,9/11/2018,V9.0.91,,V9.0.91,8
