@@ -95,11 +95,11 @@ public  class ClassOfBusinessReader extends TableReader{
             return id;
         }
 
-        public String getSql (int numberOfClassBusinessGroupReaderRows){
+        public String getSql (){
             StringBuffer sb = new StringBuffer();
             sb.append("INSERT INTO [dbo].[class_of_business]");
-            sb.append (String.format("(%s, %s, %s, %s)", CLASS_OF_BUSINESS_GROUP_ID, NAME,CREATED_BY, UPDATED_BY));
-            sb.append (String.format("VALUES ((@classOfBusinessGroupId -  %d) + %d, '%s', '%s', '%s');", numberOfClassBusinessGroupReaderRows, getClassOfBusinessGroupId(),getName().replace("'","''"),getCreatedBy(),getUpdatedBy()));
+            sb.append (String.format("(%s, %s, %s)", NAME,CREATED_BY, UPDATED_BY));
+            sb.append (String.format(" VALUES ( '%s', '%s', '%s');", getName().replace("'","''"),getCreatedBy(),getUpdatedBy()));
             return sb.toString();
         }
 

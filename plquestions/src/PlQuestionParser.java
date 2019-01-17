@@ -8,27 +8,15 @@ public class PlQuestionParser {
 
     //TODO implement args
     public  static void main(String[] args)  {
-        System.out.println("DECLARE @classOfBusinessGroupId INT;");
         System.out.println("DECLARE @classOfBusinessId INT;");
         System.out.println("DECLARE @questionId INT;");
         System.out.println("DECLARE @answerId INT;");
 
-        // OMITTED SINCE V9.0.91 takes care of these
-        //class_of_business_group
-        ClassOfBusinessGroupReader classOfBusinessGroupReader = new ClassOfBusinessGroupReader("/Users/doc/projects/colonial/sql/util/plquestions/resources/class_of_business_group.csv");
-        for (ClassOfBusinessGroupReader.ClassOfBusinessGroup classOfBusinessGroup : classOfBusinessGroupReader.getRows()) {
-            System.out.println(classOfBusinessGroup.getSql());
-        }
-
-        //class_of_business
-        System.out.println("SELECT @classOfBusinessGroupId = SCOPE_IDENTITY();\n");
-        //System.out.println(" print '@classOfBusinessGroupId = '");
-        //System.out.println(" print @classOfBusinessGroupId ");
 
         ClassOfBusinessReader classOfBusinessReader = new ClassOfBusinessReader("/Users/doc/projects/colonial/sql/util/plquestions/resources/class_of_business.csv");
         for (ClassOfBusinessReader.ClassOfBusiness classOfBusiness : classOfBusinessReader.getRows()) {
             classOfBusinessIdToRowOffset.put(classOfBusiness.getId(), classOfBusiness.getRow());
-            System.out.println(classOfBusiness.getSql(classOfBusinessGroupReader.getNumberOfRows()));
+            System.out.println(classOfBusiness.getSql());
         }
 //        System.out.println("SELECT @classOfBusinessId = SCOPE_IDENTITY();\n");
           System.out.println("SELECT @classOfBusinessId = max(id) from class_of_business;\n");
